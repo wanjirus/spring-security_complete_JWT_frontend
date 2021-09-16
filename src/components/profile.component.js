@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import UploadFiles from "./upload-files.component";
 import AuthService from "../services/auth.service";
 
 export default class Profile extends Component {
@@ -15,6 +16,7 @@ export default class Profile extends Component {
 
     return (
       <div className="container">
+               {<UploadFiles />}
         <header className="jumbotron">
           <h3>
             <strong>{currentUser.username}</strong> Profile
